@@ -1,0 +1,4 @@
+{
+  "preset": "psr12",
+  "exclude": [".local", "node_modules", "build"]
+}

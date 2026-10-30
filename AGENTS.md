@@ -1,0 +1,7 @@
+# ZionFood WordPress
+
+Version 0.0.1. Native WordPress plugin, PHP 8.1+, WordPress 6.6+. Server origin is fixed in Client::ORIGIN to https://food.zion3d.ro. Never expose API credentials or private order/reservation/table proofs to frontend responses, logs or the ZIP. Use WordPress capability + nonce checks for admin operations and per-guest HttpOnly sessions/CSRF for public mutations. Public proxy operations must be explicitly allowlisted and limited to published locations; never forward arbitrary paths, abilities or customer prices. Use integer money and keep ZionFood authoritative.
+
+Romanian default, English optional. Every setting needs accessible labels and explanatory help. Keep languages/ro.json and languages/en.json keys aligned. No framework runtime or arbitrary executable customization. No GitHub automation, tags or deployment unless explicitly requested. Preserve unrelated changes. Update README.md checklists, CHANGELOG.md and docs/PROGRESS.md with verified work and honest limits. Version metadata must match the main plugin header, package.json, package-lock.json and readme.txt Stable tag.
+
+Validate PHP syntax, backend tests, JavaScript tests/build and relevant real WordPress/browser checks. Manual archive: python bin/build.py or ./bin/build.ps1. Package an explicit allowlist under zionfood/ and verify ZIP entries/CRC and SHA256; do not package tests, runtime fixtures, node_modules, keys or secrets.

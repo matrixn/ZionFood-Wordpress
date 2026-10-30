@@ -1,0 +1,7 @@
+node_modules
+assets/dist
+.local
+build
+test-results
+playwright-report
+package-lock.json
